@@ -9,12 +9,15 @@ while True:
         tasks.append(new_task)
         print("task add ")
     if num=="2":
-        print("---your tasks are:")
-        for t in tasks:
-            if t!="":
-                i+=1
-                print(f"{i}. {t}")
-        print("\n this all tasks")
+        if not tasks:
+            print("\n no tasks")
+        else :
+            print("---your tasks are:")
+            for t in tasks:
+                if t!="":
+                    i+=1
+                    print(f"{i}. {t}")
+            print("\n this all tasks")
     if num=="3":
         i=0
         for t in tasks:
